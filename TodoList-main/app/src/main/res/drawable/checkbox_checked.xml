@@ -1,0 +1,5 @@
+<!-- checkbox_checked.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/green" />
+    <!-- You can define the shape of the checked checkbox, for instance, a square or rounded rectangle -->
+</shape>

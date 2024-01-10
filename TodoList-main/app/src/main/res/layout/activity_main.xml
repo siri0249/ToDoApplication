@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:background="#1C1B1B"
+  tools:context=".ui.MainActivity">
+
+  <TextView
+      android:id="@+id/tvhello"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="20dp"
+      android:text="Welcome Back !"
+      android:textColor="#487C3B"
+      android:textSize="50sp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  android:text="Your Tasks:"
+  android:textSize="20sp"
+    android:textColor="#C3C6C2"
+  android:id="@+id/tvtasks"
+    android:layout_marginStart="17dp"
+  android:layout_below="@+id/tvhello"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      android:layout_width="match_parent"
+      android:layout_below="@+id/tvtasks"
+      android:layout_margin="12dp"
+      android:layout_height="match_parent" >
+
+  </androidx.recyclerview.widget.RecyclerView>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/floatingActionButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="32dp"
+      android:backgroundTint="#468A35"
+      android:layout_marginBottom="32dp"
+      android:clickable="true"
+      android:contentDescription="adfaf"
+      android:src="@drawable/ic_baseline_add_24" />
+</RelativeLayout>

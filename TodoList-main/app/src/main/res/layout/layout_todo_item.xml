@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="13dp"
+
+        android:paddingTop="5dp"
+        android:backgroundTint="#DCDDDC"
+        android:padding="18dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/todoCheckBox"
+                android:backgroundTint="#446A3B"
+                android:layout_width="wrap_content"
+           android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_delete" />
+
+            <TextView
+                android:id="@+id/todoTitle"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Title"
+                android:textSize="20sp"
+                android:layout_toEndOf="@id/todoCheckBox"
+                android:layout_toStartOf="@id/deleteButton"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:text="Task Description"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:layout_below="@id/todoTitle"
+                android:layout_toEndOf="@id/todoCheckBox"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/textDueDate"
+                android:textColor="#C67359"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date: January 12, 2024"
+                android:layout_below="@id/textDescription"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/customButton"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:background="@drawable/custombtnnew"
+
+                android:layout_below="@id/todoTitle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:textSize="7sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="new"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priority: High"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/customButton"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

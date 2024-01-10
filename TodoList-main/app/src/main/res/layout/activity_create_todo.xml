@@ -1,0 +1,106 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F3F6F0"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvadd"
+        android:textColor="#3C772D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Add New Task"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/newTodoTextField"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvadd"
+        android:background="@drawable/customedittext"
+        android:hint="Title"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/descriptionField"
+        android:layout_below="@id/newTodoTextField"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Description"
+        android:background="@drawable/customedittext"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tvpri"
+        android:textColor="#1B1C1B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionField"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Task priority :"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/prioritySpinner"
+        android:layout_below="@id/tvpri"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:padding="10dp"
+        android:entries="@array/priority_array" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prioritySpinner"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="#1B1C1B"
+        android:layout_toLeftOf="@id/dueDateField"
+        android:text="Due Date :"
+        android:textSize="20sp" />
+
+    <DatePicker
+        android:id="@+id/dueDateField"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#CFD5CE"
+        android:calendarTextColor="#DADDDA"
+        android:layout_below="@+id/prioritySpinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveTodoButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dueDateField"
+        android:layout_centerHorizontal="true"
+        android:text="Save Task"
+        android:textColor="#F1F4F1"
+        android:background="@drawable/custombtng"
+        android:padding="10dp" />
+
+</RelativeLayout>
