@@ -42,18 +42,23 @@ The To-Do List App is a task management application designed to **help users org
 
 ## **Technologies Used**
 
+
 - **Kotlin:** The primary programming language used for developing the Android application.
 - **Android Studio:** The integrated development environment (IDE) used for Android app development.
 - **Room Persistence Library:** Utilized for database management and data persistence within the Android app.
 - **XML:** Used for designing app layouts and UI elements.
 
-Installation process:
-APK Link:https://drive.google.com/file/d/161CK5-6q3YpDnpyJGpQir48aXPZ0nMu9/view?usp=sharing
+### **Installation process:**
+-> click on below link and download the apk<br>
+-> open and click on install 
+<br>-> in popup click on more details <br>-> click on Intsall anyway<br>
+APK Link: https://drive.google.com/file/d/1QUpx2yyZPeVfN09VkKcABL9L0u1cFRXc/view?usp=drivesdk
 
-##**App Screnn Shots**
+### **App Screen Shots**
+<img src="https://github.com/siri0249/todoapplication/assets/114393063/19eff57d-be04-4c0e-b57b-e004b8f2e468/Screenshot_2024-01-11-13-34-42-41_3b5a4e49df345113e2df661954e00721" width="300" height="700">
 
 
-![Screenshot_2024-01-10-15-26-45-25_3b5a4e49df345113e2df661954e00721 (4)](https://github.com/siri0249/todoapplication/assets/114393063/7f13d1a6-3e4d-4313-8f02-38a3e478c20c)
-
-
-![Screenshot_2024-01-10-15-26-50-32_3b5a4e49df345113e2df661954e00721 (2)](https://github.com/siri0249/todoapplication/assets/114393063/ed1bac8b-096e-4d89-ae25-7d5459228765)
+<img src="https://github.com/siri0249/todoapplication/assets/114393063/d70e28d7-df9b-4e1a-90e8-c72cab8eaa73" width="300" height="700">
+<br>
+<img src="https://github.com/siri0249/todoapplication/assets/114393063/5df9131c-9ffe-4bb2-a6be-b2657972a4be" width="300" height="700">
+<img src="https://github.com/siri0249/todoapplication/assets/114393063/86947e8b-bb7f-466b-b5c4-5ce4b5b6d64d" width="300" height="700">
